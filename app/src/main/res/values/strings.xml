@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Vko36teht1</string>
+
+
+    <string name="meatballs_text">meatballs</string>
+    <string name="chicken_text">chicken</string>
+    <string name="fish_text">fish</string>
+    <string name="steak_text">steak</string>
+    <string name="carrots_text">carrots</string>
+</resources>

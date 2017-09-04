@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fi.jamk.vko36teht1.MainActivity">
+
+    <RadioGroup
+        android:id="@+id/myRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="29dp">
+
+
+
+    <RadioButton
+        android:id="@+id/meatballs"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/meatballs_text"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <RadioButton
+        android:id="@+id/chicken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/chicken_text"
+        app:layout_constraintTop_toBottomOf="@+id/meatballs"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <RadioButton
+        android:id="@+id/fish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/fish_text"
+        app:layout_constraintTop_toBottomOf="@+id/chicken"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <RadioButton
+        android:id="@+id/steak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/steak_text"
+        app:layout_constraintTop_toBottomOf="@+id/fish"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <RadioButton
+        android:id="@+id/carrots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/carrots_text"
+        app:layout_constraintTop_toBottomOf="@+id/steak"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/selectButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Select"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="selectButtonClicked"/>
+
+    </RadioGroup>
+</android.support.constraint.ConstraintLayout>
